@@ -1,0 +1,31 @@
+// Adapted from OpenAI Codex rust-v0.147.0 unified_exec constants.
+export const MIN_YIELD_TIME_MS = 250;
+export const WINDOWS_INITIAL_YIELD_FLOOR_MS = 10_000;
+export const MIN_EMPTY_POLL_YIELD_MS = 5_000;
+export const MAX_YIELD_TIME_MS = 30_000;
+export const MAX_EMPTY_POLL_YIELD_MS = 300_000;
+export const DEFAULT_EXEC_YIELD_TIME_MS = 10_000;
+export const DEFAULT_WRITE_YIELD_TIME_MS = 250;
+export const DEFAULT_MAX_OUTPUT_TOKENS = 10_000;
+export const OUTPUT_MAX_BYTES = 1024 * 1024;
+export const OUTPUT_MAX_TOKENS = OUTPUT_MAX_BYTES / 4;
+export const MAX_PROCESSES = 64;
+export const PROTECTED_RECENT_PROCESSES = 8;
+export const EARLY_EXIT_GRACE_MS = 150;
+export const POST_EXIT_CLOSE_GRACE_MS = 50;
+export const PTY_REACTION_DELAY_MS = 100;
+export const STREAM_UPDATE_THROTTLE_MS = 100;
+export const RAW_READ_MAX_BYTES = 8 * 1024;
+export const OUTPUT_DRAIN_MAX_BYTES = 64 * 1024;
+export const OUTPUT_DRAIN_TARGET_MS = 8;
+export const OUTPUT_QUEUE_HIGH_WATER_BYTES = 256 * 1024;
+export const OUTPUT_QUEUE_LOW_WATER_BYTES = 64 * 1024;
+export const ARTIFACT_WRITE_HIGH_WATER_BYTES = 128 * 1024;
+export const ARTIFACT_WRITE_LOW_WATER_BYTES = 64 * 1024;
+export const TERMINAL_WRITE_HIGH_WATER_BYTES = 256 * 1024;
+export const TERMINAL_WRITE_LOW_WATER_BYTES = 64 * 1024;
+/** Global zero-width cell attachment budget scales with the largest seen viewport. */
+export const TERMINAL_CELL_ATTACHMENT_BYTES_PER_CELL = 64;
+export const ARTIFACT_PROCESS_MAX_BYTES = 64 * 1024 * 1024;
+export const ARTIFACT_MANAGER_MAX_BYTES = 256 * 1024 * 1024;
+export const INTERRUPT = "\u0003";

@@ -1,0 +1,49 @@
+{
+  "name": "bash",
+  "version": "0.1.0",
+  "description": "Managed Bash for Pi with bounded output, PTY/TUI sessions, and safe human handoff",
+  "type": "module",
+  "license": "Apache-2.0",
+  "keywords": [
+    "pi-package",
+    "pi-coding-agent",
+    "process",
+    "pty",
+    "terminal",
+    "bash",
+    "tui"
+  ],
+  "engines": {
+    "node": ">=22.19.0 <27"
+  },
+  "files": [
+    "src",
+    "skills",
+    "LICENSE",
+    "NOTICE",
+    "PROVENANCE.md"
+  ],
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ],
+    "skills": [
+      "./skills"
+    ]
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./protocol": "./src/protocol.ts"
+  },
+  "dependencies": {
+    "@lydell/node-pty": "1.2.0-beta.15",
+    "@xterm/headless": "6.0.0",
+    "bash": "file:../../../../../../tmp/bash-public-pack-debug/bash-0.1.0.tgz"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*",
+    "typebox": "*"
+  }
+}

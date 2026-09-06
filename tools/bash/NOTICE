@@ -1,0 +1,14 @@
+Bash (Unified Exec)
+Copyright 2026 Johnny Xuan and contributors
+
+This product includes behavior and adapted algorithms derived from OpenAI Codex.
+OpenAI Codex
+Copyright 2025 OpenAI
+Source reference: rust-v0.147.0, commit be6e8eac029b183056b7e4402879f15d2c85f61b
+Licensed under the Apache License, Version 2.0.
+
+The adapted implementation has been rewritten for the public Pi extension API and modified for Pi lifecycle, cancellation, output artifacts, UTF-8 handling, and tool-result semantics. See PROVENANCE.md.
+
+Terminal emulation uses @xterm/headless from xterm.js; the bounded adapter reproduces the pinned release's UnicodeV6 zero-width range data.
+Copyright (c) 2014-2026 The xterm.js authors.
+Licensed under the MIT License.
