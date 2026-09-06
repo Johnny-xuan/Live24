@@ -96,5 +96,3 @@ Prefer the application's normal exit command, EOF, or quit key. If it does not r
 ## Availability
 
 The platform shell and `write_stdin` are active when the extension is enabled, including with `--no-builtin-tools`. Explicit tool filters still apply. If `write_stdin` is unavailable, do not begin a workflow requiring continued PTY interaction.
-
-For the Windows contract see [Windows Native v1](../../docs/windows-native-v1.md). For screen, privacy, ownership, and handoff behavior see [Terminal Experience v1](../../docs/terminal-experience-v1.md).
