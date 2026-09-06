@@ -1,0 +1,56 @@
+{
+  "name": "pwsh",
+  "version": "0.1.0",
+  "description": "Platform-native managed shell for Pi: PowerShell/Win32 on Windows, Bash on Unix, with PTY/TUI sessions",
+  "type": "module",
+  "license": "Apache-2.0",
+  "keywords": [
+    "pi-package",
+    "pi-coding-agent",
+    "process",
+    "pty",
+    "terminal",
+    "bash",
+    "powershell",
+    "pwsh",
+    "windows",
+    "tui"
+  ],
+  "engines": {
+    "node": ">=22.19.0 <27"
+  },
+  "files": [
+    "src",
+    "scripts",
+    "skills",
+    "LICENSE",
+    "NOTICE",
+    "PROVENANCE.md"
+  ],
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ],
+    "skills": [
+      "./skills"
+    ]
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./protocol": "./src/protocol.ts"
+  },
+  "scripts": {
+    "doctor": "node --import tsx ./scripts/doctor.ts"
+  },
+  "dependencies": {
+    "@lydell/node-pty": "1.2.0-beta.15",
+    "@xterm/headless": "6.0.0",
+    "tsx": "^4.21.0"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*",
+    "typebox": "*"
+  }
+}
