@@ -1,0 +1,10 @@
+Compaction for Pi
+Copyright 2026 Johnny Xuan and contributors
+
+The summarization system constraint and structured checkpoint format are adapted from @earendil-works/pi-coding-agent 0.84.4, whose compaction implementation is distributed under the MIT License.
+
+Upstream project: https://github.com/earendil-works/pi
+Upstream copyright: Copyright (c) 2025 Mario Zechner
+License: MIT; the required copyright and permission notice is retained in LICENSE.
+
+The package adds configurable model selection, ordered fallbacks, thinking levels, response validation, timeout handling, percentage/absolute proactive thresholds, idle-boundary triggering, and Pi-default fallback behavior.
